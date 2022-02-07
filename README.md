@@ -30,6 +30,7 @@ If you have any issues that you would like to report to be fixed, please raise a
 ## **Updates**
 *Updates about features/bug fixes currently in development*
 
+- Adding video previews
 - Automatically populating YouTube videos
 - Regularly pulling viewcounts of listed videos
 - Fixing minor bugs when viewing on mobile
