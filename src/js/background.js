@@ -2,7 +2,7 @@ let backgrounds = [];
 let glrandomBackground = [];
 
 function getJSON() {
-    fetch('https://raw.githubusercontent.com/tfwdane/TempTest/main/index-backgrounds.json').then (data => data.json()).then(data => {
+    fetch('https://raw.githubusercontent.com/tfwdane/ViewGuesser/master/src/json/index-backgrounds.json').then (data => data.json()).then(data => {
         console.log(data);
         backgrounds.push(data.backgrounds);
         console.log(backgrounds);
