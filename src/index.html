@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<style>
+    body {
+    background: linear-gradient(rgba(20, 20, 20, 0.753), rgba(20,20,20, 0.753)), url(images/1.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000af;
+    color: #000000b6;
+    
+    /* no highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    /* mobile compatibility */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    }
+</style>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="ViewGuesser">
+    <meta name="description" content="ViewGuesser is a higher-lower guessing game based on YouTube video views.">
+    <meta name="keywords" content="ViewGuesser, Views, Higher, Lower, Guessing, Game, YouTube, Viewcount">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <!-- CSS LIBRARIES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
+        integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>ViewGuesser :: A higher-lower game based on YouTube video views</title>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+    
+    <body>
+        <div class="homemenupanel">
+            <div class="home-logo">
+                <img src="images/logo.png" alt="Logo" class="rounded mx-auto d-block">
+                <p>A higher-lower guessing game based on <span style="color: red;"><i class="fab fa-youtube"></i> YouTube</span> video views</p>
+            </div>
+            <div class="button-wrapper">
+                <div class="main-buttons justify-content-center align-items-center">
+                    <ul>
+                        <li><button id="playbtn" class="btn btn-primary home-buttons" onclick="window.location.href='play';"><b>Play</b></button></li>
+                        <li><button id="howtoplaybtn" class="btn btn-primary home-buttons" onclick="showHowToPlayModal();"><b>How to Play</b></button></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+    <div class="background-overlay">   
+        <div class="background-attribution">
+            <div class="attribution-text">
+                <p><b>BACKGROUND:</b></p>
+                <p id="video-title"><b><a href="#">YAMEII-AWAY</a></b></p>
+                <p id="video-creator"><b>by <a href="#">OSEAN WORLD</a></b></p>
+            </div>
+        </div>
+        <footer>
+            <div class="links">
+                <ul>
+                    <li><a href="https://github.com/tfwdane/ViewGuesser"><p><i class="fab fa-github"></i> Source Code</p></a></li>
+                    <li>|</li>
+                    <li><a href="#" onclick="showDonateModal();"><p><i class="fas fa-coffee"></i> Buy me a coffee!</p></a></li>
+                    <!-- <li>|</li> -->
+                    <!-- <li><a href="#"><p><i class="fas fa-question-circle"></i> FAQ</p></a></li> -->
+                </ul>
+            </div>
+            <div class="copyright-text">
+                <p>A fun project made with <span style="color: red;"><i class="fas fa-heart"></i></span> by <a href="https://dane.wtf">Dane Buchanan</a></p>
+            </div>
+        </footer>
+
+        <script>
+            window.onload = function () {
+                getJSON();
+            };
+        </script>
+    
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/js/all.js" integrity="sha512-vn7pO1RiR0IT5T9K+USTmMfkTaecOtFtCCV0JvT+j8ZPBujq6C3P5J2sHttG7D41pBPqLCih+7lIXamnFodtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/background.js"></script>
+    </div> 
+</body>
+<!-- Modal -->
+<div class="modal fade" id="howtoplayModal" tabindex="-1" role="dialog" aria-labelledby="howtoplayModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><b>How to Play</b></h5>
+                <a class="close" onclick="hideHowToPlayModal();" style="color: white;"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="modal-body-content" style="padding: 20px;">
+                <p>You will be presented with two videos, one video on the left and a different video on the right (top and bottom if you're on mobile). These will be different random videos pulled from YouTube.</p>
+
+                <p>Each video will display the title, the name of the creator that made the video, the videos viewcount & the videos thumbnail in the background. There is also an option to preview each video.</p>
+
+                <p>The view count of the first video will be displayed on the left. The video on the right will have two buttons, one for higher and one for lower. You have to guess if this video has higher or lower views than the video on the left.</p>
+                <p>Once you make your selection, the viewcount of the video will then be displayed. If you picked correctly the video will then move to the left and a new video will be populated on the right. If you picked incorrectly, the game will end and you will see a losing screen.
+                The losing screen will change depending on your final score.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donateModalTitle"><b>Donate</b></h5>
+                <a class="close" onclick="hideDonateModal();" style="color: white;"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="modal-body-content" style="padding: 20px;">
+                <p>If you would like to donate, my details are below. Donations are definitely not expected but are highly appreciated if you like the game and want to support the development :)</p>
+                <hr>
+                <b><u>PayPal</u></b>
+                <p><a href="https://paypal.me/daaane">https://paypal.me/daaane</a></p>
+                <br>
+                <b><u>Cash App</u></b>
+                <p><a href="https://cash.app/£daneffx">https://cash.app/£daneffx</a></p>
+                <br>
+                <b><u>Bitcoin</u></b>
+                <p>bc1qyevcm5ct2e238fdc44jau46galpq6xxd5xdxuj</p>
+                <br>
+                <b><u>Ethereum</u></b>
+                <p>0x7e31dF204247A3b9661D109783218e231959a1E4</p>
+                <br>
+                <b><u>Cardano</u></b>
+                <p>addr1qxy49lgx9mnqts0f3kwxm2ltr3qfuxngh49pk5kacqhx7sdg4gch48g35fap6a4y3fup3pzjam06yukhnzatdlktghdq9unjew</p>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+

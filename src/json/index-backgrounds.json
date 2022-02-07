@@ -1,0 +1,17 @@
+{
+    "backgrounds":
+        [{
+            "backgroundURL": "images/backgrounds/1.gif", 
+            "videoTitle": "YAMEII - AWAY",
+            "videoCreator": "OSEAN WORLD", 
+            "videoURL": "https://www.youtube.com/watch?v=13Htma66dS4",
+            "creatorURL": "https://www.youtube.com/channel/UCkdrq_tLIE-W9NY_jIqeKzQ" 
+        },
+        {
+            "backgroundURL": "images/backgrounds/2.gif", 
+            "videoTitle": "FINALLY SPENDING MY YOUTUBE MONEY",
+            "videoCreator": "LINUS TECH TIPS", 
+            "videoURL": "https://www.youtube.com/watch?v=c_Ab2F8UwvQ",
+            "creatorURL": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw" 
+        }]
+}

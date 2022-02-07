@@ -1,0 +1,550 @@
+/* INDEX CSS */
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000af;
+    color: #000000b6;
+    
+    /* no highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    /* mobile compatibility */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+hr {
+    color: white;
+}
+
+
+/* .background-overlay {
+    background-color: rgba(0, 0, 0, 0.884);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+} */
+
+/* .home-container {
+    background-color: #363636;
+    width: 500px;
+    height: 500px;
+    margin: 25em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+} */
+
+.homemenupanel {
+    background-color: #363636;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 15em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+}
+
+@media screen and (max-height: 925px) {
+    .homemenupanel {
+        position: relative;
+        top: -18%;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .homemenupanel {
+        position: relative;
+        top: -35%;
+        width: 100%;
+    }
+  }
+
+  .homemenupanel p {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+.home-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    width: 75%;
+}
+
+.home-logo p {
+    text-align: center;
+    color: white;
+}
+
+.home-buttons {
+    cursor: pointer;
+    border-radius: 2em;
+    border: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 0%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+}
+
+.main-buttons {
+    display: flex;
+    margin-left: -30px
+}
+
+.main-buttons ul {
+    list-style-type: none;
+}
+
+.button-wrapper {
+    padding-bottom: 30px;
+}
+
+#playbtn {
+    color: #ffffff;
+    background: #c50000;
+    width: 100%;
+    margin-top: 25px; /* or whatever you like */
+}
+
+#playbtn:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+#howtoplaybtn {
+    color: #000000;
+    background: #808080;
+    width: 100%;
+}
+#howtoplaybtn:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright-text { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: white;
+  }
+  
+  .copyright-text a {
+    color: white;
+  }
+
+  .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex
+  }
+
+  .links li {
+      display: inline;
+      color: white;
+      padding-right: 5px;
+  }
+
+  .links a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .background-attribution {
+    width: 200px;
+    height: 120px;
+    position: fixed;
+    right: 45px;
+    bottom: 0px;
+    text-transform: uppercase;
+    z-index: 9;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media screen and (max-height: 800px) {
+    .attribution-text {
+        width: 200px;
+        height: 100px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        text-transform: uppercase;
+        z-index: 9;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 12px;
+    }
+    footer {
+        font-size: 12px;
+    }
+  }
+
+  .modal-content {
+      background-color: #363636;
+      color: white;
+  }
+
+  .modal-body-content {
+      text-align: center;
+      word-wrap: break-word;
+  }
+
+  .close {
+    cursor: pointer;
+  }
+
+  .attribution-text p{
+      text-align: right;
+      margin-bottom: 1px;
+      color: white;
+  }
+
+  .attribution-text a {
+      color: red;
+      text-decoration: none;
+  }
+
+  @media only screen and (max-width: 780px) {
+    .background-attribution {
+        width: 200px;
+        height: 120px;
+        position: fixed;
+        right: 45px;
+        bottom: 80px;
+        text-transform: uppercase;
+        z-index: 9;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+
+    /* GAME CSS */
+    .leftside, .rightside {
+        height: 100vh;
+        width: 100%;
+    }
+
+    @media screen and (max-width:992px) {
+        .leftside, .rightside {
+            height: 50vh;
+        }
+    }
+
+    #leftside {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://img.youtube.com/vi/0e3GPea1Tyg/maxresdefault.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .leftside-content {
+        color: white;
+        padding: 10px;
+    }
+
+    .leftside-content h1 {
+        font-size: 70px;
+    }
+
+    @media screen and (max-width:450px) {
+        .leftside-content h1 {
+            font-size: 40px;
+        }
+        .leftside-content h2 {
+            font-size: 20px;
+        }
+        .leftside-content p {
+            font-size: 12px;
+        }
+
+    }
+
+    #rightside {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://img.youtube.com/vi/9Cm8D1L1IzQ/maxresdefault.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+    }
+
+    .rightside-content {
+        color: white;
+        padding: 10px;
+    }
+
+    .rightside-content h1 {
+        font-size: 70px;
+    }
+
+    @media screen and (max-width:450px) {
+        .rightside-content h1 {
+            font-size: 40px;
+        }
+        .rightside-content h2 {
+            font-size: 20px;
+        }
+        .rightside-content p {
+            font-size: 12px;
+        }
+        #hlbtn-row button{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+    }
+
+    #left-video-title, #right-video-title {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #right-video-end-viewcount {
+        display: none;
+    }
+
+    #right-video-bottom-correct-text {
+        display: none;
+    }
+
+    #hlbtn-row {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .vs-icon {
+        left: 0;
+        line-height: 200px;
+        margin-top: -100px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        z-index: 9;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: white;
+    }
+
+    @media screen and (max-width:992px) {
+        .vs-icon {
+            left: 0;
+            line-height: 200px;
+            margin-top: -25px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            z-index: 9;
+        }
+    }
+
+    .higherlower-btn {
+        cursor: pointer;
+        border-radius: 2em;
+        border: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 0%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        margin-top: 10px;
+    }
+
+    .higherlower-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .score-counter {
+        width: 200px;
+        height: 100px;
+        position: fixed;
+        right: 45px;
+        bottom: 0px;
+        text-transform: uppercase;
+        z-index: 9;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .score-counter h2 {
+        color: white;
+    }
+
+    @media screen and (max-height:1050px) {
+        .score-counter {
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            right: -100px;
+            top: 10px;
+            text-transform: uppercase;
+            z-index: 9;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .score-counter h2{
+            font-size: 20px;
+        }
+    }
+
+    .modal-body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://www.whoateallthepies.tv/wp-content/uploads/2013/05/ramires-faceplant.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .score-content h1, h2, h3, p {
+        color: white;
+    }
+
+    .share-buttons ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+    }
+    
+    .share-buttons li {
+        display: inline;
+        color: white;
+        padding-right: 5px;
+    }
+
+    #tweet-button {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+        
+            text-decoration: none;
+            background-color: #00acee;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            color: white;
+    }
+
+    #fb-share-button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+    
+        text-decoration: none;
+        background-color: #4267B2;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        color: white;
+}
+
+.losing-navigation-buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    display: inline-flex;
+}
+
+.losing-navigation-buttons li {
+    display: inline;
+    color: white;
+    padding-right: 5px;
+}
+
+.btn-losingnavigation {
+    cursor: pointer;
+        border-radius: 2em;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 0%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        margin-top: 10px;
+}
+
+.btn-losingnavigation:hover {
+    background-color: white;
+        color: black;
+}
+
+#play-again-btn {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+

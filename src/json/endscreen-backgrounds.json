@@ -1,0 +1,38 @@
+{
+    "losingbackgrounds":
+        [{
+            "backgroundURL": "http://www.whoateallthepies.tv/wp-content/uploads/2013/05/ramires-faceplant.gif", 
+            "endComment": "Not such a good score, better luck next time!"
+        },
+        {
+            "backgroundURL": "https://c.tenor.com/gsBilnF97T0AAAAC/fail.gif", 
+            "endComment": "Come on! I know you can do better than that."
+        },
+        {
+            "backgroundURL": "https://c.tenor.com/kPJLTrJgNqoAAAAC/fail-watermelon.gif", 
+            "endComment": "I could get a higher score with my eyes closed!"
+        }],
+
+    "decentbackgrounds": [{
+        "backgroundURL": "https://c.tenor.com/A-ozELwp694AAAAC/thumbs-thumbs-up-kid.gif", 
+        "endComment": "Not bad! You did better than most."
+    },
+    {
+        "backgroundURL": "https://media3.giphy.com/media/mGK1g88HZRa2FlKGbz/giphy.gif?cid=ecf05e47d92c3jiehyze3kacg5la0jnnmzb9q9mmog1ry5dw&rid=giphy.gif&ct=g", 
+        "endComment": "Thats a decent score, you should be proud of that."
+    },
+    {
+        "backgroundURL": "https://media2.giphy.com/media/Od0QRnzwRBYmDU3eEO/giphy.gif?cid=ecf05e477zaqhi7qj4q4b45at8xrx1jtd0p6hpgi7gt8sw77&rid=giphy.gif&ct=g", 
+        "endComment": "(Borat impression) Very nice!"
+    }],
+
+    "winningbackgrounds":
+    [{
+        "backgroundURL": "https://media0.giphy.com/media/xT9DPCsF3yzgWUuVOM/giphy.gif?cid=ecf05e479vv0h18d7nx4s1lbdw0x84t8ysvfisrm8vgg6k4h&rid=giphy.gif&ct=g", 
+        "endComment": "Great score! You scored higher than most people who play."
+    },
+    {
+        "backgroundURL": "https://media4.giphy.com/media/vmon3eAOp1WfK/giphy.gif?cid=ecf05e47izxoerfwokq0q5fuy6ifo02n6ur7h3scb37fmis3&rid=giphy.gif&ct=g", 
+        "endComment": "Amazing score! Time to celebrate."
+    }]
+}
