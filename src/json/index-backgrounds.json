@@ -1,28 +1,21 @@
 {
     "backgrounds":
         [{
-            "backgroundURL": "images/backgrounds/1.gif", 
+            "backgroundURL": "https://github.com/tfwdane/ViewGuesser/blob/master/src/images/backgrounds/1.gif?raw=true", 
             "videoTitle": "YAMEII - AWAY",
             "videoCreator": "OSEAN WORLD", 
             "videoURL": "https://www.youtube.com/watch?v=13Htma66dS4",
             "creatorURL": "https://www.youtube.com/channel/UCkdrq_tLIE-W9NY_jIqeKzQ" 
         },
         {
-            "backgroundURL": "images/backgrounds/2.gif", 
+            "backgroundURL": "https://github.com/tfwdane/ViewGuesser/blob/master/src/images/backgrounds/2.gif?raw=true", 
             "videoTitle": "FINALLY SPENDING MY YOUTUBE MONEY",
             "videoCreator": "LINUS TECH TIPS", 
             "videoURL": "https://www.youtube.com/watch?v=c_Ab2F8UwvQ",
             "creatorURL": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw" 
         },
         {
-            "backgroundURL": "images/backgrounds/3.gif", 
-            "videoTitle": "Flying A Plane Through Tunnels: World First | 4K HD",
-            "videoCreator": "Red Bull", 
-            "videoURL": "https://www.youtube.com/watch?v=19fQAxys9q8",
-            "creatorURL": "https://www.youtube.com/channel/UCblfuW_4rakIf2h6aqANefA" 
-        },
-        {
-            "backgroundURL": "images/backgrounds/3.gif", 
+            "backgroundURL": "https://github.com/tfwdane/ViewGuesser/blob/master/src/images/backgrounds/3.gif?raw=true", 
             "videoTitle": "Flying A Plane Through Tunnels: World First | 4K HD",
             "videoCreator": "Red Bull", 
             "videoURL": "https://www.youtube.com/watch?v=19fQAxys9q8",
